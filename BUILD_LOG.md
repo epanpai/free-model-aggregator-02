@@ -146,3 +146,10 @@ Skor = quality 60 / served 15 / wire 10 / failover 10 / catalog 5.
 - Kuota harian OpenRouter (50/hari): terpakai ~5 (awal) + ~2 tes langsung + ~35 grade
   (run 2-5 + tes mini-gw) — masih di bawah 50, tapi Dialectica memakai key yang sama,
   jadi hati-hati bila grade ulang hari ini.
+
+## Submit percobaan #1 — DITOLAK situs (15 Nov ~11:25 WIB, commit 1e893ac)
+- Penyebab: 2 check intake gagal — repo_readme (repo TIDAK PUNYA README.md; wajib 3 badge live make.fun) dan repo_about (About GitHub kosong: tanpa website + tanpa topic makefun). Kuota hari ini: day cap 3, refused 1, left 2 (reset 16 Nov 00:00 UTC); percobaan ditolak TIDAK memakan jatah taken.
+- Perbaikan (parent, commit berikutnya):
+  - README.md baru dari how_to_submit.readme_template (GET requirements): 3 badge live (badge slug + rank + reward epanpai/free-model-aggregator-02), deskripsi, run `node main.ts`, referral code xweavw8m.
+  - Repo About via gh: description + homepage https://make.fun/bounty/free-model-aggregator-02 + topics makefun,ai-agents,bounties,code (terverifikasi via gh api).
+- Re-bundle v5 + re-check + re-submit dengan commit baru (lihat bawah).
